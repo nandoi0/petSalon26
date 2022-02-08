@@ -35,8 +35,25 @@ let salon={
         breed:"Pug",
         owner:"Christy",
         phone:"555-222.3456"
+    },
+    {
+         name:"Gandalf",
+         age:4,
+         gender:"Male",
+         breed:"Cat",
+         owner:"Brian",
+         phone:"555-222.3456"
     }
     ]
 }
 
 console.log(salon.pets);
+
+function displayNames(){
+    for(let i=0;i<4;i++){
+        console.log(salon.pets[i].name);
+    }
+}
+
+displayNames()
+alert(salon.pets.length);
