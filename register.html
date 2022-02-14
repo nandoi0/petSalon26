@@ -4,27 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <title>The Groomer</title>
 </head>
-<body>
 
-    <div class="input-container">
-        <h2>Register new pet</h2>
-        <div class="form-control">
-            <input type="text" id="txtName" placeholder="Enter pets name">
-        </div>
+
+<body class="body">
+  <header>  
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="index.html">About</a>
+        <a href="service.html">Service</a>
+        <a href="register.html">Register</a>
+    </nav>
+    
+    <figure class="newfs">
+    <img  src="img/IMG_6467.jpg" alt="Newfies">
+    </figure>
+</header>
+<main>
+
+    
+
+<div class="input-container">
+    <h2>Register your pet here</h2>
+
+ <div class="form-control">
+        <input type="text" id="txtName" placeholder="Enter pets name">
+ </div>
+
    <div class="form-control">
-    <input type="text" id="txtAge" placeholder="Enter pets age">
+        <input type="number" id="txtAge" placeholder="Enter pets age">
    </div>
+
    <div class="form-control">
-    <input type="text" id="txtGender" placeholder="Enter pets gender">
+        <input type="text" id="txtGender" placeholder="Enter pets gender">
+   </div>
+
+   <div class="form-control">
+        <input type="text" id="txtBreed" placeholder="Enter the Breed">
+   </div>
+
+
+   <div class="form-control">
+       <select class="select-class" id="selService">
+           <option value="nails cut">Nails cut</option>
+           <option value="bath">Bath</option>
+           <option value="hair cut">Hair cut</option>
+        </select>
    </div>
    <button onclick="register();">Register</button>
+</div>
 
-    <div id="salonInformation">
+   <div>
+       <input type="text" id="txtSearch" placeholder="Enter a name">
+       <button  id="btnSearch" onclick="searchPet()">Search</button>
+       <button id="btnClear" onclick="showPetsCards()">Clear</button>
+   </div>
+
+   <h2 id="headerList">Pets List</h2>
+
+        <div id="petList" class="pets";>
+            <!--display the pets-->
+        </div>
+
+    
 
     </div>
-</div>
+    </main>
+
+    <footer class="foot">
+        <div id="salonInformation"></div>
+    </footer>
+    
+    
+
     <script src="script/register.js"></script>
     <script src="script/displayinfo.js"></script>
 </body>
